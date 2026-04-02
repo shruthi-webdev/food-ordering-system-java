@@ -1,6 +1,14 @@
 package com.example.foodorder.dto;
 
 /**
- * Incoming chat message from the user.
+ * Request body for POST /api/chat/recommend
  */
-public record ChatRequest(String message) {}
+public class ChatRequest {
+    private String message;
+
+    public ChatRequest() {}
+    public ChatRequest(String message) { this.message = message; }
+
+    public String message()              { return message; }
+    public void setMessage(String message) { this.message = message; }
+}
