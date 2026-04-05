@@ -108,10 +108,10 @@ export default function App() {
     <div className="shell">
       <header className="hero">
         <div>
-          <p className="eyebrow">NEON CURRY HOUSE</p>
-          <h1>Byte-sized spice.</h1>
+          <p className="eyebrow">java kitchen</p>
+          <h1>code based spice.</h1>
           <p>
-            Digitized flavors from the cyber grill. Traverse the cybertandoor selections, drop items into your hovering cache, and process credits instantly.
+           get your customised food data feed, optimized for your cravings and dietary preferences. Syncs seamlessly to your grid for instant access during mealtime.
           </p>
         </div>
         <div className="badge">
