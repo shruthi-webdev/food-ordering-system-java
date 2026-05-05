@@ -6,6 +6,7 @@ import com.example.foodorder.handler.MenuHandler;
 import com.example.foodorder.handler.OrderHandler;
 import com.example.foodorder.server.Router;
 import com.example.foodorder.service.*;
+import com.example.foodorder.util.DatabaseSetup;
 import com.sun.net.httpserver.HttpServer;
 
 import java.net.InetSocketAddress;
@@ -35,6 +36,8 @@ public class Main {
     private static final Logger log = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws Exception {
+
+        DatabaseSetup.createTables();
 
         // ── Step 1: Wire services (Manual Dependency Injection) ─────────────
         MenuService           menuService    = new MenuService();
