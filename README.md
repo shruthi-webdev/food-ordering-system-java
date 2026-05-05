@@ -10,3 +10,5 @@ Chat assistant for food recommendations
 Checkout and order placement
 Invoice generation and billing
 Asynchronous order processing
+
+backend: connected jdbc manually using jar flie and adding it to the referenced libraries.
