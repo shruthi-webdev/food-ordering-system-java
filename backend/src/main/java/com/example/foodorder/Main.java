@@ -45,7 +45,8 @@ public class Main {
         BillingService        billingService = new BillingService();
 
         // Polymorphism: variable typed as interface, holds async implementation
-        OrderProcessor        orderProcessor = new AsyncOrderProcessor(billingService);
+        OrderProcessor        databaseOrderProcessor = new DatabaseOrderProcessor(billingService);
+        OrderProcessor        orderProcessor = new AsyncOrderProcessor(databaseOrderProcessor);
 
         LlmIntentParserService intentParser  = new LlmIntentParserService();
         FoodRuleEngineService  ruleEngine    = new FoodRuleEngineService();
